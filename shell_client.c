@@ -14,11 +14,11 @@ int main(int argc, char *argv[]) {
     char *host = argv[1];
     int port = atoi(argv[2]);
 
-    // Conectar al servidor
-    int sockfd = TCP_Open(host, port);
-
-    char comando[BUFSIZ];
     while (1) {
+        // Conectar al servidor
+        int sockfd = TCP_Open(host, port);
+
+        char comando[BUFSIZ];
         // Leer comando del usuario
         printf("> ");
         fgets(comando, BUFSIZ, stdin);
@@ -26,6 +26,9 @@ int main(int argc, char *argv[]) {
 
         // Salir si el usuario escribe "salida"
         if (strcmp(comando, "salida") == 0) {
+            // Cerrar conexión y salir del bucle
+            TCP_Close(sockfd);
+            printf("Conexión cerrada en el cliente.\n");
             break;
         }
 
@@ -36,10 +39,10 @@ int main(int argc, char *argv[]) {
         char respuesta[BUFSIZ];
         TCP_Read_String(sockfd, respuesta, BUFSIZ);
         printf("Respuesta del servidor:\n%s\n", respuesta);
-    }
-     // Cerrar conexión
-    TCP_Close(sockfd);
-    printf("Conexión cerrada en el cliente.\n");
-    return 0;
 
+        // Cerrar conexión
+        TCP_Close(sockfd);
+    }
+
+    return 0;
 }
