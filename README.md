@@ -13,9 +13,9 @@ Para poder hacer uso del proyecto, abre dos terminales, en una se abre y se ejec
 
 ## Archivos principales des proyecto
 
-shell_client.c: Código fuente del cliente.
-shell_server.c: Código fuente del servidor.
-tcp.h: Encabezado que contiene las definiciones de funciones y estructuras para la comunicación TCP. (Brindado por Prof. John Sanabria).
-tcp.c: Implementación de las funciones definidas en tcp.h para la comunicación TCP. (Brindado por Prof. John Sanabria).
+- shell_client.c: Código fuente del cliente.
+- shell_server.c: Código fuente del servidor.
+- tcp.h: Encabezado que contiene las definiciones de funciones y estructuras para la comunicación TCP. (Brindado por Prof. John Sanabria).
+- tcp.c: Implementación de las funciones definidas en tcp.h para la comunicación TCP. (Brindado por Prof. John Sanabria).
 
 El resto de archivos también son de propiedad del Prof. John Sanabria.
