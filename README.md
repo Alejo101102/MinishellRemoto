@@ -3,6 +3,16 @@
 Proyecto de shell remoto que facilita la conexión entre cliente y servidor. Este sistema permite visualizar las respuestas del servidor a través 
 de la terminal de comandos del cliente.
 
+## Integrantes
+
+- Alejandro Guerrero Cano (2179652) - [Alejo101102](https://github.com/Alejo101102)
+
+  - Correo: alejandro.cano@correounivalle.edu.co
+
+- Juan Pablo Ante (2140132) - [JuanPabloAnteSuarez03](https://github.com/JuanPabloAnteSuarez03)
+
+  - Correo: juan.pablo.ante@correounivalle.edu.co 
+
 ## Uso
 
 Principalmente se usa el archivo shell_client.c shell_server.c tcp.h y tcp.c , siendo estos últimos dos los protocolos de conexión brindados por 
